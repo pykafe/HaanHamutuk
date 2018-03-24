@@ -19,4 +19,5 @@ from django.urls import path, include
 urlpatterns = [
     path('', include('hahan.urls')),
     path('admin/', admin.site.urls),
+    path('accounts/', include('registration.backends.default.urls')),
 ]
